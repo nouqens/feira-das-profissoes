@@ -1,19 +1,19 @@
 import './login.css'
+import {useNavigate} from "react-router-dom";
 
 
 export default function LoginPage() {
+    const navigate = useNavigate();
     return (
 
         <div>
-            <div>
                 <h1 className={'text-conectar'}>
                     CONECTAR-SE
                 </h1>
-            </div>
 
             <form className="retro-form">
 
-                <label className="retro-label" htmlFor="email">Email</label>
+                <label className="retro-label" htmlFor="email">EMAIL</label>
                 <input
                     id="email"
                     type="email"
@@ -21,7 +21,7 @@ export default function LoginPage() {
                     className="retro-input"
                 />
 
-                <label className="retro-label" htmlFor="senha">Senha</label>
+                <label className="retro-label" htmlFor="senha">SENHA</label>
                 <input
                     id="senha"
                     type="password"
@@ -30,12 +30,12 @@ export default function LoginPage() {
                 />
 
                 <button className="retro-button" type="submit">
-                    Entrar
+                    ENTRAR
                 </button>
-                <button className="retro-button-password" type="submit">
+                <button className="retro-button-password-reset" type="submit">
                     ESQUECEU A SENHA?
                 </button>
-                <button className="retro-button" type="submit">
+                <button className="retro-button" type="submit" onClick={() => navigate('/registro')}>
                     CADASTRAR
                 </button>
             </form>

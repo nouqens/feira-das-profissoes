@@ -94,6 +94,9 @@ body{
 }
 
 .TituloTopico {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-style: dashed;
     font-family: 'VT323', monospace;
     color: rgb(233, 37, 37);
     font-size: 25px;

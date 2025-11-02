@@ -3,7 +3,7 @@ import { COURSE_TOPICS } from "../../Topicos.tsx";
 import './home.css';
 
 function Home() {
-    const navigate = useNavigate(); // Hook para navegar programaticamente
+    const navigate = useNavigate();
 
     return (
         <section>
@@ -17,7 +17,7 @@ function Home() {
                     fontSize: '20px'
                 }}
                 type="button"
-                onClick={() => navigate('/login')} // Navega para /login
+                onClick={() => navigate('/login')}
             >
                 Conectar-se
             </button>
@@ -35,7 +35,7 @@ function Home() {
                 <div className='listaMaterias'>
                     {COURSE_TOPICS.map((topico, controlador) => (
                         <ul key={controlador}>
-                            <li className='TituloTopico'>{topico.title}</li>
+                            <li className='TituloTopico'>&gt; {topico.title}</li>
                         </ul>
                     ))}
                 </div>
