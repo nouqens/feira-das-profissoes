@@ -1,0 +1,26 @@
+const teste = () =>{
+  return 1 + 1;
+}
+
+// funcao hook
+const soma = () => {
+  const [value] = useState(1+1);
+  return value;
+}
+
+// funcao js que retorna html react
+const testando = () =>{
+  return (
+    <div>
+      testee
+    </div>
+  )
+}
+// componente funcional
+const Testando = () =>{
+  return (
+    <div>
+      testee
+    </div>
+  )
+}

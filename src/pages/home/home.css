@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body{
+    background-color: black;
+}
+
+.textoInfo {
+    margin-top: 8rem;
+    font-family: 'VT323', monospace;
+    color: rgb(255, 153, 0);
+    font-size: 110px;
+    text-align: center;
+    text-transform: uppercase;
+
+    text-shadow:
+            0 0 5px rgb(255, 0, 0),
+            0 0 10px rgb(223, 49, 49),
+            0 0 15px rgb(236, 93, 93);
+
+}
+
+.botaoLogin {
+    font-family: 'VT323', monospace;
+}
+
+.sobreInfo {
+    font-family: 'VT323', monospace;
+    color: tomato;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 80%; }
+}
+
+.linhaTracejada {
+    width: 80%;
+    border-top: 2px dashed rgb(253, 45, 30);
+    margin: 20px auto;
+    overflow: hidden;
+    white-space: "nowrap";
+    animation: "typing" 3s steps(50, end) infinite;
+}
+
+.divisaoMaterias {
+    height: 350px;
+    width: 70%;
+    border: 2px;
+    border-color: rgb(255, 17, 0);
+    border-style: solid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.listaMaterias {
+    font-family: 'VT323', monospace;
+    color: rgb(253, 45, 30);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: -4rem;
+}
+
+
+.listaMaterias ul {
+    width: calc(33.33% - 16px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tituloIndice {
+    text-align: center;
+    font-family: 'VT323', monospace;
+    color: rgb(255, 153, 0);
+    font-size: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-transform: uppercase;
+
+    text-shadow:
+            0 0 5px rgb(255, 0, 0),
+            0 0 10px rgb(223, 49, 49),
+            0 0 15px rgb(236, 93, 93);
+
+}
+
+.TituloTopico {
+    font-family: 'VT323', monospace;
+    color: rgb(233, 37, 37);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    text-shadow:
+            0 0 5px rgb(255, 0, 0),
+            0 0 10px rgb(223, 49, 49),
+            0 0 15px rgb(236, 93, 93);
+}
+
+.DescricaoTopico {
+    font-family: 'VT323', monospace;
+    color: tomato;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.TecnologiaTopico {
+    font-family: 'VT323', monospace;
+    color: tomato;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 1rem;
+}

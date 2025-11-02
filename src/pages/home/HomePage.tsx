@@ -1,0 +1,47 @@
+import { useNavigate } from "react-router-dom";
+import { COURSE_TOPICS } from "../../Topicos.tsx";
+import './home.css';
+
+function Home() {
+    const navigate = useNavigate(); // Hook para navegar programaticamente
+
+    return (
+        <section>
+            <button
+                className='botaoLogin'
+                style={{
+                    backgroundColor: 'black',
+                    marginLeft: '90%',
+                    color: 'rgb(255, 153, 0)',
+                    border: 'none',
+                    fontSize: '20px'
+                }}
+                type="button"
+                onClick={() => navigate('/login')} // Navega para /login
+            >
+                Conectar-se
+            </button>
+
+            <div>
+                <h1 className='textoInfo'>Informática</h1>
+                <h2 className='sobreInfo'>Seja bem-vindo(a) ao melhor curso de todos!</h2>
+            </div>
+
+            <div className='linhaTracejada'></div>
+
+            <div className='divisaoMaterias'>
+                <h1 className='tituloIndice'>[ MÓDULOS ]</h1>
+                <br />
+                <div className='listaMaterias'>
+                    {COURSE_TOPICS.map((topico, controlador) => (
+                        <ul key={controlador}>
+                            <li className='TituloTopico'>{topico.title}</li>
+                        </ul>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Home;
