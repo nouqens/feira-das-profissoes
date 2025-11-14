@@ -6,7 +6,7 @@ function Home() {
     const navigate = useNavigate();
 
     return (
-        <section>
+        <>
             <button
                 className='botaoLogin'
                 style={{
@@ -40,7 +40,7 @@ function Home() {
                     ))}
                 </div>
             </div>
-        </section>
+        </>
     );
 }
 
