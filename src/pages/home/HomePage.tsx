@@ -6,7 +6,7 @@ function Home() {
     const navigate = useNavigate();
 
     return (
-        <section>
+        <>
             <button
                 className='botaoLogin'
                 style={{
@@ -40,6 +40,7 @@ function Home() {
                     ))}
                 </div>
             </div>
+        </>
             <div className={'informacao'}>
                 {ABOUT_COURSE.map((topico) => (
                     <p className={'DescricaoTopico'} key={topico.title}>{topico.description}</p>
