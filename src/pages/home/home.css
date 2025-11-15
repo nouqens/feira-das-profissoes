@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
+:root {
+    --font: 'VT323', monospace;
+}
+
 body{
     background-color: black;
 }
 
 .textoInfo {
     margin-top: 8rem;
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
     color: rgb(255, 153, 0);
     font-size: 110px;
     text-align: center;
@@ -20,11 +25,17 @@ body{
 }
 
 .botaoLogin {
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
+    cursor: pointer;
+
+}
+.botaoLogin:hover {
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
 
 .sobreInfo {
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
     color: tomato;
     font-size: 40px;
     text-align: center;
@@ -60,7 +71,7 @@ body{
 }
 
 .listaMaterias {
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
     color: rgb(253, 45, 30);
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +90,7 @@ body{
 
 .tituloIndice {
     text-align: center;
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
     color: rgb(255, 153, 0);
     font-size: 50px;
     margin: 0 auto;
@@ -97,7 +108,7 @@ body{
     cursor: pointer;
     text-decoration: underline;
     text-decoration-style: dashed;
-    font-family: 'VT323', monospace;
+    font-family: var(--font);
     color: rgb(233, 37, 37);
     font-size: 25px;
     text-align: center;
@@ -110,17 +121,30 @@ body{
 }
 
 .DescricaoTopico {
-    font-family: 'VT323', monospace;
+    flex-basis: content;
+    font-family: var(--font);
+    color: #ff0000;
+    font-size: 28px;
+    text-align: justify;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.TecnologiaTopico {
+    font-family: var(--font);
     color: tomato;
     font-size: 13px;
     text-align: center;
     margin-top: 1rem;
 }
 
-.TecnologiaTopico {
-    font-family: 'VT323', monospace;
-    color: tomato;
-    font-size: 13px;
-    text-align: center;
-    margin-top: 1rem;
+.informacao{
+    border: rgba(255, 0, 0, 0) solid 5px;
+    margin-top: 6rem;
+    margin-left: 4%;
+    font-family: var(--font);
+    height: fit-content;
+    width: 45%;
+
+
+    box-shadow: 0px 0px 25px #ff0000;
 }

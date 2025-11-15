@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { COURSE_TOPICS } from "../../Topicos.tsx";
+import { COURSE_TOPICS, ABOUT_COURSE } from "./files/Topicos.tsx";
 import './home.css';
 
 function Home() {
@@ -39,6 +39,11 @@ function Home() {
                         </ul>
                     ))}
                 </div>
+            </div>
+            <div className={'informacao'}>
+                {ABOUT_COURSE.map((topico) => (
+                    <p className={'DescricaoTopico'} key={topico.title}>{topico.description}</p>
+                ))}
             </div>
         </section>
     );
