@@ -86,7 +86,7 @@ Simples, leve e funcionando em qualquer navegador.
 1. Baixe ou clone o repositório:
 
    ```bash
-    git clone https://github.com/nouqens/feira-das-profissoes.git
+   git clone https://github.com/nouqens/feira-das-profissoes.git
    ```
  2. Baixe o Node.js:
     > #### [Node.js](https://nodejs.org/en/download)
@@ -97,12 +97,12 @@ Simples, leve e funcionando em qualquer navegador.
 
 
 4. Onde clonou o repositorio, utilize o comando:
-    ```bash
-    npm install
+   ```bash
+   npm install
    ```
 5. Inicie o servidor:
-    ```bash
-    npm run dev
+   ```bash
+   npm run dev
    ```
 
 6. Acesse o link gerado pelo passo anterior
