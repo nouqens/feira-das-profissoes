@@ -1,73 +1,128 @@
-# React + TypeScript + Vite
+# Feira das Profissões César Campelo 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Olá, Futuros Informáticos!
+---
+Esse projeto irá contemplar a área de conhecimento Programação Web, que é uma das principais disciplinas do curso técnico em Informática.
+E este é o repositório do site criado especialmente para a **Feira das Profissões**, com o objetivo de ajudar você a conhecer um pouco mais sobre o **Curso de Informática**, como ele funciona, o que se aprende e por que tanta gente se apaixona pela área de tecnologia.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Criamos este site pensando em quem está começando a descobrir seus talentos e buscando entender qual caminho seguir no futuro.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  **O que você vai encontrar aqui**
 
-## Expanding the ESLint configuration
+Este site foi feito para ser simples, direto e útil.
+Aqui você encontra:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* Uma explicação clara sobre como é estudar **Informática**
+* Uma visão geral das **principais disciplinas**
+* Um contato inicial com o universo da programação, redes, manutenção e muito mais
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A ideia é que, ao navegar pelo site, você consiga imaginar como seria fazer parte desse curso.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##  **Sobre o Curso de Informática**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Se você gosta de tecnologia, criatividade e resolver problemas, este curso pode ser um ótimo começo.
+Nele, você aprende desde os primeiros passos da programação até o funcionamento interno de um computador. Também entende como a internet funciona, como montar projetos reais e como usar ferramentas que fazem parte do dia a dia da área de TI.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O curso prepara o aluno para:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Criar soluções digitais
+* Trabalhar com computadores e redes
+* Desenvolver sites e sistemas
+* Entender como a tecnologia transforma o mundo
+
+E o melhor: tudo isso de forma prática, com projetos e atividades reais.
+
+---
+
+## **Principais Disciplinas do Curso**
+
+Abaixo estão algumas matérias que você provavelmente vai encontrar ao longo da formação — explicadas de forma simples e humana:
+
+###  1. **Programação**
+
+Aqui você aprende a falar com o computador por meio de linguagens como Python, C ou Java. É onde tudo começa: lógica, criatividade e resolução de problemas.
+
+### 2. **Desenvolvimento Web**
+
+É a disciplina que te ensina a criar sites! Você aprende HTML, CSS, JavaScript e começa a dar vida a páginas e aplicações interativas.
+
+### 🗄3. **Banco de Dados**
+
+Descobre como as informações são armazenadas e organizadas. Essa matéria mostra como empresas guardam dados importantes e como fazer consultas usando SQL.
+
+### 4. **Manutenção de Computadores**
+
+Gosta de entender “o que tem dentro do PC”? Então você vai curtir. Aqui você aprende a montar, desmontar, identificar peças e resolver problemas comuns.
+
+### 5. **Redes de Computadores**
+
+Mostra como funciona a internet de verdade: roteadores, IPs, protocolos… tudo o que faz um computador conversar com o outro.
+
+### 6. **Design Digital**
+
+Matéria voltada para criatividade: edição de imagens, criação de materiais visuais e noções de design.
+
+---
+
+## ️ **Tecnologias Usadas no Site**
+
+* HTML5
+* CSS3
+* TypeScript
+* React
+* Vite
+
+Simples, leve e funcionando em qualquer navegador.
+
+---
+
+## **Como ver o site funcionando**
+
+1. Baixe ou clone o repositório:
+
+   ```bash
+    git clone https://github.com/nouqens/feira-das-profissoes.git
+   ```
+ 2. Baixe o Node.js:
+    > #### [Node.js](https://nodejs.org/en/download)
+   
+3. Instale o Node.js:
+
+   <img src="src/assets/node_Install.png" width="400" height="350">
+
+
+4. Onde clonou o repositorio, utilize o comando:
+    ```bash
+    npm install
+   ```
+5. Inicie o servidor:
+    ```bash
+    npm run dev
+   ```
+
+6. Acesse o link gerado pelo passo anterior
+
+7. Divirta-se!
+
+---
+
+## **Contribuindo**
+
+Quer deixar o site ainda melhor? Tem sugestões de conteúdos, cores, textos ou disciplinas?
+Fique à vontade para colaborar! Cada ideia ajuda o projeto a crescer, como a tecnologia sempre faz. 💙
+
+---
+
+##  **Licença**
+
+Este projeto é livre para uso educacional.
+Adaptar, melhorar ou reinventar é totalmente bem-vindo!
+
+---
+
+
